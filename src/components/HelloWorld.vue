@@ -13,10 +13,12 @@ function counter(e) {
 </script>
 
 <template>
+<div class="flex flex-col items-center">
   <h1 class="mb-4 mt-4">{{ msg }}</h1>
   <div>
     <button class="btn btn-primary w-38" type="button" @click="(e) => counter(e)">count is {{ count }}</button>
   </div>
+</div>
 </template>
 
 <style scoped>

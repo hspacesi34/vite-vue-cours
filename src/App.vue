@@ -7,7 +7,7 @@ import AppFooter from './components/AppFooter.vue';
 <template>
   <AppHeader/>
   <main class="flex-grow">
-    <HelloWorld msg="Counter component"/>
+    <RouterView />
   </main>
   <AppFooter/>
 </template>
