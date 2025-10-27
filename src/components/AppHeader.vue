@@ -27,7 +27,7 @@
       <li>
         <details>
           <summary>Lessons</summary>
-          <ul class="p-2">
+          <ul class="p-2 z-40">
             <li><RouterLink to="/lessons/text-interpolation">Text interpolation</RouterLink></li>
             <li><RouterLink to="/lessons/inline-templating">Inline templating</RouterLink></li>
             <li><RouterLink to="/lessons/attribute-binding">Attribute binding</RouterLink></li>
@@ -37,7 +37,7 @@
       <li>
         <details>
           <summary>Exos</summary>
-          <ul class="p-2">
+          <ul class="p-2 z-40">
             <li><RouterLink to="/exos/text-interpolation">Text interpolation</RouterLink></li>
             <li><RouterLink to="/exos/data-binding">TP Data binding</RouterLink></li>
           </ul>

@@ -20,14 +20,14 @@
 
 <script setup>
 class UserFou {
-    constructor(name, imgProfile, age, nbFetiche){
+    constructor(name, imgProfile, age){
         this._name = name;
         this._imgProfile = imgProfile;
         this._age = age;
-        this._nbFetiche = nbFetiche;
+        this._nbFetiche = Math.floor(Math.random() * 1000000000) + 1;
     }
 }
 
 const imageUser = 'https://i.chzbgr.com/full/9106857728/hF9556D7F';
-const leVraiNaruto = new UserFou('Le vrai Naruto', imageUser, 30, 1919118159336);
+const leVraiNaruto = new UserFou('Le vrai Naruto', imageUser, 30);
 </script>
