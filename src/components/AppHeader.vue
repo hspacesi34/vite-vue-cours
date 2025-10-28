@@ -33,6 +33,11 @@
             <li><RouterLink to="/lessons/attribute-binding">Attribute binding</RouterLink></li>
             <li><RouterLink to="/lessons/event-binding">Event binding</RouterLink></li>
             <li><RouterLink to="/lessons/two-way-binding">Two way binding</RouterLink></li>
+            <li><RouterLink to="/lessons/computed-properties">Computed properties</RouterLink></li>
+            <li><RouterLink to="/lessons/conditionnal-rendering">Conditionnal rendering</RouterLink></li>
+            <li><RouterLink to="/lessons/dynamic-styling">Dynamic styling</RouterLink></li>
+            <li><RouterLink to="/lessons/list-rendering">List rendering</RouterLink></li>
+            <li><RouterLink to="/lessons/watchers">Watchers</RouterLink></li>
           </ul>
         </details>
       </li>
@@ -44,6 +49,9 @@
             <li><RouterLink to="/exos/data-binding">TP Data binding</RouterLink></li>
             <li><RouterLink to="/exos/event-binding">Event binding</RouterLink></li>
             <li><RouterLink to="/exos/computed-bug">Computed bug</RouterLink></li>
+            <li><RouterLink to="/exos/watchers">Watchers</RouterLink></li>
+            <li><RouterLink to="/exos/dynamic-styling">Dynamic styling</RouterLink></li>
+            <li><RouterLink to="/exos/conditionnal-rendering">Conditionnal rendering</RouterLink></li>
           </ul>
         </details>
       </li>
