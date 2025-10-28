@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col items-center mt-10">
-        <div>
-            <h1 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Event Binding Exo Compteur</h1>
+        <div class="w-full max-w-md mx-auto">
+            <h1 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-center">Event Binding Exo Compteur</h1>
             <div class="flex justify-center p-8 gap-12">
                 <div class="tooltip tooltip-bottom">
                     <div class="tooltip-content">
@@ -18,13 +18,14 @@
                 </div>
             </div>
         </div>
-        <div>
-            <h1 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Petit TP</h1>
+        <div class="divider"></div>
+        <h1 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text mb-4">Petit TP</h1>
+        <div class="w-full max-w-md mx-auto p-4 bg-base-200 rounded-box">
             <div>
                 <h3>v-on:keyup ou @keyup</h3>
                 <fieldset class="fieldset">
                     <legend class="fieldset-legend">Saississez du texte</legend>
-                    <input @input.key_up="(e) => value1 = e.target.value" type="text" class="input" placeholder="Type here" />
+                    <input @input.key_up="(e) => value1 = e.target.value" type="text" class="input w-full sm:w-auto flex-grow" placeholder="Type here" />
                     <p class="label">Le contenu de l'input est : {{ value1 }}</p>
                 </fieldset>
             </div>
@@ -32,13 +33,13 @@
                 <h3>Modificateur d'événement</h3>
                 <fieldset class="fieldset">
                     <legend class="fieldset-legend">Saississez du texte et appuyez sur la touche "Echap"</legend>
-                    <input @keyup.esc="(e) => value2 = e.target.value" type="text" class="input" placeholder="Type here" />
+                    <input @keyup.esc="(e) => value2 = e.target.value" type="text" class="input w-full sm:w-auto flex-grow" placeholder="Type here" />
                     <p class="label">La valeur confirmée par échap est : {{ value2 }}</p>
                 </fieldset>
             </div>
             <div>
                 <h3>Evenement @click</h3>
-                <button @click="displayAlert" class="btn btn-secondary size-full">Afficher une alerte</button>
+                <button @click="displayAlert" class="btn btn-secondary w-full h-8">Afficher une alerte</button>
             </div>
         </div>
     </div>
