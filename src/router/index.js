@@ -7,12 +7,14 @@ const routes = [
     { path: 'text-interpolation', component: () => import('../views/lessons/TextInterpolation.vue') },
     { path: 'inline-templating', component: () => import('../views/lessons/InlineTemplating.vue') },
     { path: 'attribute-binding', component: () => import('../views/lessons/AttributeBinding.vue') },
-    { path: 'event-binding', component: () => import('../views/lessons/EventBinding.vue') }
+    { path: 'event-binding', component: () => import('../views/lessons/EventBinding.vue') },
+    { path: 'two-way-binding', component: () => import('../views/lessons/TwoWayBinding.vue') }
   ] },
   { path: '/exos', children: [
     { path: 'text-interpolation', component: () => import('../views/exos/TextInterpolation.vue') },
     { path: 'data-binding', component: () => import('../views/exos/DataBinding.vue') },
-    { path: 'event-binding', component: () => import('../views/exos/EventBinding.vue') }
+    { path: 'event-binding', component: () => import('../views/exos/EventBinding.vue') },
+    { path: 'computed-bug', component: () => import('../views/exos/ComputedBug.vue') }
   ] }
 ]
 
