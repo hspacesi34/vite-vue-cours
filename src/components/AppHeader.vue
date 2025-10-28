@@ -31,6 +31,7 @@
             <li><RouterLink to="/lessons/text-interpolation">Text interpolation</RouterLink></li>
             <li><RouterLink to="/lessons/inline-templating">Inline templating</RouterLink></li>
             <li><RouterLink to="/lessons/attribute-binding">Attribute binding</RouterLink></li>
+            <li><RouterLink to="/lessons/event-binding">Event binding</RouterLink></li>
           </ul>
         </details>
       </li>
@@ -40,6 +41,7 @@
           <ul class="p-2 z-40">
             <li><RouterLink to="/exos/text-interpolation">Text interpolation</RouterLink></li>
             <li><RouterLink to="/exos/data-binding">TP Data binding</RouterLink></li>
+            <li><RouterLink to="/exos/event-binding">Event binding</RouterLink></li>
           </ul>
         </details>
       </li>

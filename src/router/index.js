@@ -6,11 +6,13 @@ const routes = [
   { path: '/lessons', children: [
     { path: 'text-interpolation', component: () => import('../views/lessons/TextInterpolation.vue') },
     { path: 'inline-templating', component: () => import('../views/lessons/InlineTemplating.vue') },
-    { path: 'attribute-binding', component: () => import('../views/lessons/AttributeBinding.vue') }
+    { path: 'attribute-binding', component: () => import('../views/lessons/AttributeBinding.vue') },
+    { path: 'event-binding', component: () => import('../views/lessons/EventBinding.vue') }
   ] },
   { path: '/exos', children: [
     { path: 'text-interpolation', component: () => import('../views/exos/TextInterpolation.vue') },
-    { path: 'data-binding', component: () => import('../views/exos/DataBinding.vue') }
+    { path: 'data-binding', component: () => import('../views/exos/DataBinding.vue') },
+    { path: 'event-binding', component: () => import('../views/exos/EventBinding.vue') }
   ] }
 ]
 
