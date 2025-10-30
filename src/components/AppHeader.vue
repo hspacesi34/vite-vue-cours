@@ -28,16 +28,7 @@
         <details>
           <summary>Lessons</summary>
           <ul class="p-2 z-40">
-            <li><RouterLink to="/lessons/text-interpolation">Text interpolation</RouterLink></li>
-            <li><RouterLink to="/lessons/inline-templating">Inline templating</RouterLink></li>
-            <li><RouterLink to="/lessons/attribute-binding">Attribute binding</RouterLink></li>
-            <li><RouterLink to="/lessons/event-binding">Event binding</RouterLink></li>
-            <li><RouterLink to="/lessons/two-way-binding">Two way binding</RouterLink></li>
-            <li><RouterLink to="/lessons/computed-properties">Computed properties</RouterLink></li>
-            <li><RouterLink to="/lessons/conditionnal-rendering">Conditionnal rendering</RouterLink></li>
-            <li><RouterLink to="/lessons/dynamic-styling">Dynamic styling</RouterLink></li>
-            <li><RouterLink to="/lessons/list-rendering">List rendering</RouterLink></li>
-            <li><RouterLink to="/lessons/watchers">Watchers</RouterLink></li>
+            <li v-for="route in routes[2].children"><RouterLink :to="`/lessons/${route.path}`">{{ route.name.slice(7,route.name.length) }}</RouterLink></li>
           </ul>
         </details>
       </li>
@@ -45,13 +36,7 @@
         <details>
           <summary>Exos</summary>
           <ul class="p-2 z-40">
-            <li><RouterLink to="/exos/text-interpolation">Text interpolation</RouterLink></li>
-            <li><RouterLink to="/exos/data-binding">TP Data binding</RouterLink></li>
-            <li><RouterLink to="/exos/event-binding">Event binding</RouterLink></li>
-            <li><RouterLink to="/exos/computed-bug">Computed bug</RouterLink></li>
-            <li><RouterLink to="/exos/watchers">Watchers</RouterLink></li>
-            <li><RouterLink to="/exos/dynamic-styling">Dynamic styling</RouterLink></li>
-            <li><RouterLink to="/exos/conditionnal-rendering">Conditionnal rendering</RouterLink></li>
+            <li v-for="route in routes[3].children"><RouterLink :to="`/exos/${route.path}`">{{ route.name.slice(4,route.name.length) }}</RouterLink></li>
           </ul>
         </details>
       </li>
@@ -63,3 +48,7 @@
   </div>
 </div>
 </template>
+
+<script setup>
+import { routes } from '../router';
+</script>

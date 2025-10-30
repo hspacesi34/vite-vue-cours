@@ -13,7 +13,7 @@ import { ref, watch } from 'vue';
 const number = ref(0);
 
 watch(number, (newNumber) => {
-    if (newNumber == 7) {
+    if (newNumber === 7) {
         number.value = 0;
     }
 })
